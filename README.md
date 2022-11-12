@@ -5,9 +5,7 @@ The rankings are based off of [data from all T20I Matches](https://github.com/sa
 
 The chances of each side remaining in the 2022 ICC T20 World Cup are indicated below:
 
-Team | Make Final | Win World Cup
---- | --- | ---
-:india: `India`| 56.4% | 34.1%
-:new_zealand: `New Zealand`| 55.2% | 24.6%
-:england: `England`| 43.6% | 23.5%
-:pakistan: `Pakistan`| 44.8% | 17.8%
+Team | Win World Cup
+--- | ---
+:england: England| 56.1%
+:pakistan: Pakistan| 43.9%
