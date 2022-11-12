@@ -9,7 +9,7 @@ df = pd.read_csv("T20I_Matches_Data.csv")
 
 # anticipated years of matches where an update is necessary
 years = ['2022']
-last_match_number_in_year = 378
+last_match_number_in_year = 369
 
 match_ids = []
 

@@ -224,7 +224,7 @@ match_ids = ['211048', '211028', '222678', '226374', '237242', '238195', '225271
              '1327505', '1336031', '1327231', '1336032', '1327506', '1327232', '1327233', '1327507', '1327234',
              '1327508', '1317482', '1322334', '1317483', '1322335', '1333930', '1322336', '1317486', '1333931',
              '1333932', '1322337', '1322338', '1317487', '1322339', '1322340', '1317488', '1336951', '1336952',
-             '1336953', '1336954', '1336955', '1336956']
+             ]
 
 # This is the list of Match numbers for the 2021 T20I World Cup. Because there were other T20I tournaments during this
 # time, a list is needed to determine if a match is a World Cup Match
@@ -278,7 +278,7 @@ cities_to_country = {'Auckland': 'New  Zealand', 'Southampton': 'England', 'Joha
 code_to_country = {'AUS': 'Australia', 'NZ': 'New Zealand', 'ENG': 'England', 'SA': 'South Africa', 'WI': 'West Indies',
                    'SL': 'Sri Lanka', 'PAK': 'Pakistan', 'BAN': 'Bangladesh', 'ZIM': 'Zimbabwe', 'INDIA': 'India',
                    'KENYA': 'Kenya', 'SCOT': 'Scotland', 'NED': 'Netherlands', 'IRE': 'Ireland', 'CAN': 'Canada',
-                   'BMUDA': 'Bermunda', 'AFG': 'Afghanistan', 'NEPAL': 'Nepal', 'UAE': 'UAE', 'PNG': 'Papua New Guinea',
+                   'BMUDA': 'Bermuda', 'AFG': 'Afghanistan', 'NEPAL': 'Nepal', 'UAE': 'UAE', 'PNG': 'Papua New Guinea',
                    'OMA': 'Oman', 'BHR': 'Bahrain', 'Saudi': 'Saudi Arabia', 'Mald': 'Maldives', 'KUW': 'Kuwait',
                    'QAT': 'Qatar', 'USA': 'USA', 'PHI': 'Philippines', 'VAN': 'Vanuatu', 'MLT': 'Malta', 'ESP': 'Spain',
                    'Mex': 'Mexico', 'Blz': 'Belize', 'NGA': 'Nigeria', 'Ghana': 'Ghana', 'NAM': 'Namibia',

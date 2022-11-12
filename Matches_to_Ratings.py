@@ -26,10 +26,7 @@ code_to_country = {'AUS': 'Australia', 'NZ': 'New Zealand', 'ENG': 'England', 'S
                    'Belg': 'Belgium', 'MAL': 'Malaysia'
                    }
 
-# this list includes all ICC Full Members until the introduction of T20Is in 2005
-full_icc_members = ['Australia', 'England', 'South Africa', 'India', 'New Zealand', 'West Indies', 'Pakistan',
-                    'Sri Lanka', 'Zimbabwe', 'Bangladesh']
-
+# these are all the teams that qualified for each World Cup
 wc_years = {'2007': ['South Africa', 'Bangladesh', 'West Indies', 'Australia', 'England', 'Zimbabwe', 'Sri Lanka',
                      'New Zealand', 'Kenya', 'India', 'Pakistan', 'Scotland'],
             '2009': ['India', 'Bangladesh', 'Ireland', 'Pakistan', 'England', 'Netherlands', 'Australia', 'Sri Lanka',
@@ -52,16 +49,19 @@ wc_years = {'2007': ['South Africa', 'Bangladesh', 'West Indies', 'Australia', '
                      'South Africa']
             }
 # creates an elo dictionary for all T20I teams
-elo_dict = {}
+# These initial elo ratings are only for countries in the ODI ranking table in February 2005
+elo_dict = {'Australia': 1926, 'New Zealand': 1904, 'Sri Lanka': 1910, 'Pakistan': 1899, 'England': 1899,
+            'West Indies': 1891, 'South Africa': 1883, 'India': 1879, 'Zimbabwe': 1766, 'Kenya': 1649,
+            'Bangladesh': 1550}
 
-# every country is given a starting rating of 1500 except full ICC members. Members have won about 70% of T20I matches
-# with non-members, so they are given with a 70% win expected
+# every country is given a starting rating of 1500 except countries where ratings are provided above. Bangladesh,
+# Zimbabwe, and Kenya have won about 57% of T20I matches, so Bangladesh, the lowest-ranked ODI side in February 2005
+# gets a 50 rating bump
 for country_code, country in code_to_country.items():
-    if country in full_icc_members:
-        elo_dict.update({country: 1650})
-    else:
+    if country not in elo_dict:
         elo_dict.update({country: 1500})
 wc_initiated = False
+# goes through match data for all T20Is and determines elo ratings
 for match, match_facts in df.iterrows():
     bf = match_facts["Batting First"]
     bs = match_facts["Batting Second"]
